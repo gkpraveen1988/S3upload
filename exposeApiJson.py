@@ -17,7 +17,6 @@ def api_hello():
     js = json.dumps(data)
 
     resp = Response(js, status=200, mimetype='application/json')
-    resp.headers['Link'] = 'http://luisrei.com'
 
     return resp
 
